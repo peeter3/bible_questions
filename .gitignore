@@ -1,2 +1,5 @@
 *.md
 *.docx
+
+# But don't ignore README.md
+!README.md
