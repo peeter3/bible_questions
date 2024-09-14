@@ -98,17 +98,21 @@ m4_dnl question will appear in an SQLite `INSERT` statement.
 m4_define([_QUESTION_0118M], [During his second missionary journey, the apostle Paul spoke to women at the riverside at Philippi. There he found Lydia, the first convert to Christ in Philippi. Who is the second recorded convert to Christ in Philippi? _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 3
 _QUESTION_0118
 _SEND_IN_YOUR_ANSWERS
+m4_divert
+_QUESTION_0118
+_SEND_IN_YOUR_ANSWERS
+m4_divert([1])
 m4_define([_QUESTION_SQLITE],[_QUESTION_0118])
 
 _WHEN_ASKED
-
+9/15/24
 
 _ANSWER_2
 m4_undefine([_NBSP_MARKDOWN])m4_dnl
-_CORRECT_ANS_LOG([MM/DD/YY], [the jailer. It is written in Acts[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])16:30--33.])
+_CORRECT_ANS_LOG([9/15/24], [the jailer. It is written in Acts[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])16:30--33.])
 
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
-_CORRECT_ANS_BULLETIN_A([MM/DD/YY], [the jailer. It is written in Acts[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])16:30--33.])
+_CORRECT_ANS_BULLETIN_A([9/15/24], [the jailer. It is written in Acts[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])16:30--33.])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([the jailer. It is written in Acts[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])16:30--33.])])m4_dnl
 
 m4_define([_QUESTION_0118M_A], [The jailer. Acts\ 16])m4_dnl
@@ -160,10 +164,6 @@ m4_dnl question will appear in an SQLite `INSERT` statement.
 m4_define([_QUESTION_0121M], [After the Babylonian captivity, which two prophets prophesied in Jerusalem during the rebuilding of the temple? _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 3
 _QUESTION_0121
 _SEND_IN_YOUR_ANSWERS
-m4_divert
-_QUESTION_0121
-_SEND_IN_YOUR_ANSWERS
-m4_divert([1])
 m4_define([_QUESTION_SQLITE],[_QUESTION_0121])
 
 _WHEN_ASKED
@@ -176,6 +176,9 @@ _CORRECT_ANS_LOG([9/8/24], [that Haggai and Zechariah were the two prophets who 
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
 _CORRECT_ANS_BULLETIN_A([9/8/24], [that Haggai and Zechariah were the two prophets who prophesied at the rebuilding of the temple. It is written in Ezra[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:1.])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([that Haggai and Zechariah were the two prophets who prophesied at the rebuilding of the temple. It is written in Ezra[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:1.])])m4_dnl
+m4_divert
+_CORRECT_ANS_BULLETIN_B([9/8/24], [that Haggai and Zechariah were the two prophets who prophesied at the rebuilding of the temple. It is written in Ezra[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:1.])
+m4_divert([1])
 
 m4_define([_QUESTION_0121M_A], [Haggai and Zechariah. Ezra\ 5.])m4_dnl
 m4_define([_QUESTION_0121M_B], [Malachi and Isaiah. Nehemiah\ 4])m4_dnl
@@ -267,9 +270,6 @@ _CORRECT_ANS_LOG([9/1/24], [our Lord says[,] "If the world hates you[,] know tha
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
 _CORRECT_ANS_BULLETIN_A([9/1/24], [our Lord says[,] **"If the world hates you[,] know that it has hated Me before it hated you"** in John[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])15:18.])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Our Lord says[,] **"If the world hates you[,] know that it has hated Me before it hated you"** in John[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])15:18.])])m4_dnl
-m4_divert
-_CORRECT_ANS_BULLETIN_B([9/1/24], [our Lord says[,] **"If the world hates you[,] know that it has hated Me before it hated you"** in John[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])15:18.])
-m4_divert([1])
 
 m4_define([_QUESTION_0120M_A], [1\ Peter\ 4])m4_dnl
 m4_define([_QUESTION_0120M_B], [John\ 15])m4_dnl
