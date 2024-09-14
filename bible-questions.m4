@@ -189,6 +189,36 @@ m4_changequote
 
 _QUESTION
 m4_changequote(`[', `]')
+m4_define([_QUESTION_0123], [Which prophet prophesied **"Out of Egypt I called my Son"**? _CHAPTER_AND_VERSE where this is found in the Bible.])m4_dnl Difficulty 3
+m4_dnl Single quotes should be doubled because the multiple choice
+m4_dnl question will appear in an SQLite `INSERT` statement.
+m4_define([_QUESTION_0123M], [Which prophet prophesied **"Out of Egypt I called my Son"**? _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 3
+_QUESTION_0123
+_SEND_IN_YOUR_ANSWERS
+m4_define([_QUESTION_SQLITE],[_QUESTION_0123])
+
+_WHEN_ASKED
+
+_ANSWER_2
+m4_undefine([_NBSP_MARKDOWN])m4_dnl
+_CORRECT_ANS_LOG([MM/DD/YY], [Hosea. It is written in Hosea[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:1.])
+
+m4_define([_NBSP_MARKDOWN], [])m4_dnl
+_CORRECT_ANS_BULLETIN_A([MM/DD/YY], [Hosea. It is written in Hosea[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:1.])
+m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Hosea. It is written in Hosea[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:1.])])m4_dnl
+
+m4_define([_QUESTION_0123M_A], [Amos. Amos\ 8.])m4_dnl
+m4_define([_QUESTION_0123M_B], [Hosea. Hosea\ 11])m4_dnl
+m4_define([_QUESTION_0123M_C], [Jeremiah. Jeremiah\ 37])m4_dnl
+m4_divert([2])m4_dnl
+INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0123M', '_QUESTION_0123M_A', '_QUESTION_0123M_B', '_QUESTION_0123M_C', 'B', NULL);
+m4_divert([3])m4_dnl
+INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
+m4_divert([1])m4_dnl
+m4_changequote
+
+_QUESTION
+m4_changequote(`[', `]')
 m4_define([_QUESTION_0122], [Who wrote, **"Vanity of vanities, … All is vanity"**? _CHAPTER_AND_VERSE where this is found in the Bible.])m4_dnl Difficulty 3
 m4_dnl Single quotes should be doubled because the multiple choice
 m4_dnl question will appear in an SQLite `INSERT` statement.
