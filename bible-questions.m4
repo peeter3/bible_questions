@@ -184,6 +184,44 @@ m4_changequote
 
 _QUESTION
 m4_changequote(`[', `]')
+m4_define([_QUESTION_0124], [Who is the most sinful person who ever lived? _CHAPTER_AND_VERSE where this is found in the Bible.])m4_dnl Difficulty 4
+m4_dnl Single quotes should be doubled because the multiple choice
+m4_dnl question will appear in an SQLite `INSERT` statement.
+m4_define([_QUESTION_0124M], [Who is the most sinful person who ever lived? _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 4
+_QUESTION_0124
+_SEND_IN_YOUR_ANSWERS
+m4_divert
+_QUESTION_0124
+_SEND_IN_YOUR_ANSWERS
+m4_divert([1])
+m4_define([_QUESTION_SQLITE],[_QUESTION_0124])
+
+_WHEN_ASKED
+9/29/24
+
+_ANSWER_2
+m4_undefine([_NBSP_MARKDOWN])m4_dnl
+_CORRECT_ANS_LOG([9/29/24], [our Lord Jesus Christ: He bore the sins of the world. It is written in 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])John[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:2; 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Peter[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:24; 2[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Corinthians[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:21. Yet[,] at the same time[,] He had no sin of His own. This is written in 2[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Corinthians[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:21; 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Peter[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:22; Hebrews[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:15 as well as in other places.])
+
+m4_define([_NBSP_MARKDOWN], [])m4_dnl
+_CORRECT_ANS_BULLETIN_A([9/29/24], [our Lord Jesus Christ: He bore the sins of the world. It is written in 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])John[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:2; 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Peter[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:24; 2[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Corinthians[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:21. Yet[,] at the same time[,] He had no sin of His own. This is written in 2[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Corinthians[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:21; 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Peter[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:22; Hebrews[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:15 as well as in other places.])
+m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([our Lord Jesus Christ: He bore the sins of the world. It is written in 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])John[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:2; 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Peter[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:24; 2[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Corinthians[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:21. Yet[,] at the same time[,] He had no sin of His own. This is written in 2[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Corinthians[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:21; 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Peter[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:22; Hebrews[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:15 as well as in other places.])])m4_dnl
+m4_divert
+
+m4_divert([1])
+
+m4_define([_QUESTION_0124M_A], [Manasseh. 2\ Kings\ 21.])m4_dnl
+m4_define([_QUESTION_0124M_B], [Jezebel. 1\ Kings\ 21])m4_dnl
+m4_define([_QUESTION_0124M_C], [Our Lord Jesus. 1\ John\ 2])m4_dnl
+m4_divert([2])m4_dnl
+INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0124M', '_QUESTION_0124M_A', '_QUESTION_0124M_B', '_QUESTION_0124M_C', 'C', NULL);
+m4_divert([3])m4_dnl
+INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
+m4_divert([1])m4_dnl
+m4_changequote
+
+_QUESTION
+m4_changequote(`[', `]')
 m4_define([_QUESTION_0122], [Who wrote, **"Vanity of vanities, … All is vanity"**? _CHAPTER_AND_VERSE where this is found in the Bible.])m4_dnl Difficulty 3
 m4_dnl Single quotes should be doubled because the multiple choice
 m4_dnl question will appear in an SQLite `INSERT` statement.
@@ -829,10 +867,6 @@ m4_define([_QUESTION_0096], [**"My God, My God, why have You forsaken Me? Why ar
 m4_define([_QUESTION_0096M], [_QUESTION_0096])m4_dnl Difficulty 1
 _QUESTION_0096
 _SEND_IN_YOUR_ANSWERS
-m4_divert
-_QUESTION_0096
-_SEND_IN_YOUR_ANSWERS
-m4_divert([1])
 m4_define([_QUESTION_SQLITE], [_QUESTION_0096])
 
 _WHEN_ASKED
@@ -843,8 +877,11 @@ m4_undefine([_NBSP_MARKDOWN])m4_dnl
 _CORRECT_ANS_LOG([9/22/24], [Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])22.])
 
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
-_CORRECT_ANS_BULLETIN_A([MM/DD/YY], [Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])22.])
+_CORRECT_ANS_BULLETIN_A([9/22/24], [Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])22.])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])22.])])m4_dnl
+m4_divert
+_CORRECT_ANS_BULLETIN_B([9/22/24], [Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])22.])
+m4_divert([1])
 
 m4_define([_QUESTION_0096M_A], [Psalm\ 97])m4_dnl
 m4_define([_QUESTION_0096M_B], [Psalm\ 22])m4_dnl
@@ -2716,9 +2753,6 @@ _CORRECT_ANS_LOG([9/15/24], [the jailer. It is written in Acts[]m4_ifdef([_NBSP_
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
 _CORRECT_ANS_BULLETIN_A([9/15/24], [the jailer. It is written in Acts[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])16:30--33.])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([the jailer. It is written in Acts[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])16:30--33.])])m4_dnl
-m4_divert
-_CORRECT_ANS_BULLETIN_B([9/15/24], [the jailer. It is written in Acts[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])16:30--33.])
-m4_divert([1])
 
 m4_define([_QUESTION_0118M_A], [The jailer. Acts\ 16])m4_dnl
 m4_define([_QUESTION_0118M_B], [Hermes. Acts\ 14])m4_dnl
