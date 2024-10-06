@@ -98,17 +98,21 @@ m4_dnl question will appear in an SQLite `INSERT` statement.
 m4_define([_QUESTION_0119M], [Whose bed was nine cubits long and four cubits wide? _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 3
 _QUESTION_0119
 _SEND_IN_YOUR_ANSWERS
+m4_divert
+_QUESTION_0119
+_SEND_IN_YOUR_ANSWERS
+m4_divert([1])
 m4_define([_QUESTION_SQLITE],[_QUESTION_0119])
 
 _WHEN_ASKED
-
+10/6/24
 
 _ANSWER_2
 m4_undefine([_NBSP_MARKDOWN])m4_dnl
-_CORRECT_ANS_LOG([MM/DD/YY], [Og the king of Bashan. It is written in Deuteronomy[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])3:11.])
+_CORRECT_ANS_LOG([10/6/24], [Og the king of Bashan. It is written in Deuteronomy[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])3:11.])
 
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
-_CORRECT_ANS_BULLETIN_A([MM/DD/YY], [Og the king of Bashan. It is written in Deuteronomy[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])3:11.])
+_CORRECT_ANS_BULLETIN_A([10/6/24], [Og the king of Bashan. It is written in Deuteronomy[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])3:11.])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Og the king of Bashan. It is written in Deuteronomy[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])3:11.])])m4_dnl
 
 m4_define([_QUESTION_0119M_A], [Abimelech. Judges\ 9])m4_dnl
@@ -190,10 +194,6 @@ m4_dnl question will appear in an SQLite `INSERT` statement.
 m4_define([_QUESTION_0124M], [Who is the most sinful person who ever lived? _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 4
 _QUESTION_0124
 _SEND_IN_YOUR_ANSWERS
-m4_divert
-_QUESTION_0124
-_SEND_IN_YOUR_ANSWERS
-m4_divert([1])
 m4_define([_QUESTION_SQLITE],[_QUESTION_0124])
 
 _WHEN_ASKED
@@ -207,7 +207,7 @@ m4_define([_NBSP_MARKDOWN], [])m4_dnl
 _CORRECT_ANS_BULLETIN_A([9/29/24], [our Lord Jesus Christ: He bore the sins of the world. It is written in 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])John[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:2; 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Peter[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:24; 2[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Corinthians[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:21. Yet[,] at the same time[,] He had no sin of His own. This is written in 2[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Corinthians[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:21; 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Peter[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:22; Hebrews[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:15 as well as in other places.])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([our Lord Jesus Christ: He bore the sins of the world. It is written in 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])John[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:2; 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Peter[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:24; 2[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Corinthians[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:21. Yet[,] at the same time[,] He had no sin of His own. This is written in 2[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Corinthians[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:21; 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Peter[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:22; Hebrews[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:15 as well as in other places.])])m4_dnl
 m4_divert
-
+_CORRECT_ANS_BULLETIN_B([9/29/24], [our Lord Jesus Christ: He bore the sins of the world. It is written in 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])John[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:2; 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Peter[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:24; 2[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Corinthians[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:21. Yet[,] at the same time[,] He had no sin of His own. This is written in 2[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Corinthians[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:21; 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Peter[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:22; Hebrews[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:15 as well as in other places.])
 m4_divert([1])
 
 m4_define([_QUESTION_0124M_A], [Manasseh. 2\ Kings\ 21.])m4_dnl
@@ -879,9 +879,6 @@ _CORRECT_ANS_LOG([9/22/24], [Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])22.])
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
 _CORRECT_ANS_BULLETIN_A([9/22/24], [Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])22.])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])22.])])m4_dnl
-m4_divert
-_CORRECT_ANS_BULLETIN_B([9/22/24], [Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])22.])
-m4_divert([1])
 
 m4_define([_QUESTION_0096M_A], [Psalm\ 97])m4_dnl
 m4_define([_QUESTION_0096M_B], [Psalm\ 22])m4_dnl
