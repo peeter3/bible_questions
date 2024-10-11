@@ -92,16 +92,47 @@ m4_changequote
 
 _QUESTION
 m4_changequote(`[', `]')
+m4_define([_QUESTION_0125], [The LORD sometimes brings disaster that we may repent. Which prophet declared the following from the LORD? **"'I would send rain on one city, and send no rain on another city; … so two or three cities would wander to another city to drink water, and would not be satisfied; yet you did not return to Me,' declares the Lord."** _CHAPTER_AND_VERSE where this is found in the Bible.])m4_dnl Difficulty 4
+m4_dnl Single quotes should be doubled because the multiple choice
+m4_dnl question will appear in an SQLite `INSERT` statement.
+m4_define([_QUESTION_0125M], [The LORD sometimes brings disaster that we may repent. Which prophet declared the following from the LORD? **"''I would send rain on one city, and send no rain on another city; … so two or three cities would wander to another city to drink water, and would not be satisfied; yet you did not return to Me,'' declares the Lord."** _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 4
+_QUESTION_0125
+_SEND_IN_YOUR_ANSWERS
+m4_divert
+_QUESTION_0125
+_SEND_IN_YOUR_ANSWERS
+m4_divert([1])
+m4_define([_QUESTION_SQLITE], [The LORD sometimes brings disaster that we may repent. Which prophet declared the following from the LORD? **"''I would send rain on one city, and send no rain on another city; … so two or three cities would wander to another city to drink water, and would not be satisfied; yet you did not return to Me,'' declares the Lord."** _CHAPTER_AND_VERSE where this is found in the Bible.])
+
+_WHEN_ASKED
+10/13/24
+
+_ANSWER_2
+m4_undefine([_NBSP_MARKDOWN])m4_dnl
+_CORRECT_ANS_LOG([10/13/24], [Amos. It is written in Amos[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:7--8.])
+
+m4_define([_NBSP_MARKDOWN], [])m4_dnl
+_CORRECT_ANS_BULLETIN_A([10/13/24], [Amos. It is written in Amos[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:7--8.])
+m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Amos. It is written in Amos[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:7--8.])])m4_dnl
+
+m4_define([_QUESTION_0125M_A], [Elijah. 1\ Kings\ 18])m4_dnl
+m4_define([_QUESTION_0125M_B], [Amos. Amos\ 4])m4_dnl
+m4_define([_QUESTION_0125M_C], [Zephaniah. Zephaniah\ 2])m4_dnl
+m4_divert([2])m4_dnl
+INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0125M', '_QUESTION_0125M_A', '_QUESTION_0125M_B', '_QUESTION_0125M_C', 'B', NULL);
+m4_divert([3])m4_dnl
+INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
+m4_divert([1])m4_dnl
+m4_changequote
+
+_QUESTION
+m4_changequote(`[', `]')
 m4_define([_QUESTION_0119], [Whose bed was nine cubits long and four cubits wide? _CHAPTER_AND_VERSE where this is found in the Bible.])m4_dnl Difficulty 3
 m4_dnl Single quotes should be doubled because the multiple choice
 m4_dnl question will appear in an SQLite `INSERT` statement.
 m4_define([_QUESTION_0119M], [Whose bed was nine cubits long and four cubits wide? _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 3
 _QUESTION_0119
 _SEND_IN_YOUR_ANSWERS
-m4_divert
-_QUESTION_0119
-_SEND_IN_YOUR_ANSWERS
-m4_divert([1])
 m4_define([_QUESTION_SQLITE],[_QUESTION_0119])
 
 _WHEN_ASKED
@@ -114,6 +145,9 @@ _CORRECT_ANS_LOG([10/6/24], [Og the king of Bashan. It is written in Deuteronomy
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
 _CORRECT_ANS_BULLETIN_A([10/6/24], [Og the king of Bashan. It is written in Deuteronomy[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])3:11.])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Og the king of Bashan. It is written in Deuteronomy[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])3:11.])])m4_dnl
+m4_divert
+_CORRECT_ANS_BULLETIN_B([10/6/24], [Og the king of Bashan. It is written in Deuteronomy[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])3:11.])
+m4_divert([1])
 
 m4_define([_QUESTION_0119M_A], [Abimelech. Judges\ 9])m4_dnl
 m4_define([_QUESTION_0119M_B], [Og the king of Bashan. Deuteronomy\ 3])m4_dnl
@@ -206,9 +240,6 @@ _CORRECT_ANS_LOG([9/29/24], [our Lord Jesus Christ: He bore the sins of the worl
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
 _CORRECT_ANS_BULLETIN_A([9/29/24], [our Lord Jesus Christ: He bore the sins of the world. It is written in 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])John[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:2; 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Peter[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:24; 2[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Corinthians[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:21. Yet[,] at the same time[,] He had no sin of His own. This is written in 2[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Corinthians[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:21; 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Peter[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:22; Hebrews[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:15 as well as in other places.])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([our Lord Jesus Christ: He bore the sins of the world. It is written in 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])John[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:2; 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Peter[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:24; 2[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Corinthians[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:21. Yet[,] at the same time[,] He had no sin of His own. This is written in 2[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Corinthians[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:21; 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Peter[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:22; Hebrews[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:15 as well as in other places.])])m4_dnl
-m4_divert
-_CORRECT_ANS_BULLETIN_B([9/29/24], [our Lord Jesus Christ: He bore the sins of the world. It is written in 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])John[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:2; 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Peter[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:24; 2[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Corinthians[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:21. Yet[,] at the same time[,] He had no sin of His own. This is written in 2[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Corinthians[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:21; 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Peter[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:22; Hebrews[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:15 as well as in other places.])
-m4_divert([1])
 
 m4_define([_QUESTION_0124M_A], [Manasseh. 2\ Kings\ 21.])m4_dnl
 m4_define([_QUESTION_0124M_B], [Jezebel. 1\ Kings\ 21])m4_dnl
