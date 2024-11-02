@@ -32,41 +32,6 @@ m4_divert(`1')
 
 _QUESTION
 m4_changequote(`[', `]')
-m4_define([_QUESTION_0122], [Who wrote, **"Vanity of vanities, … All is vanity"**? _CHAPTER_AND_VERSE where this is found in the Bible.])m4_dnl Difficulty 2
-m4_dnl Single quotes should be doubled because the multiple choice
-m4_dnl question will appear in an SQLite `INSERT` statement.
-m4_define([_QUESTION_0122M], [Who wrote, **"Vanity of vanities, … All is vanity"**? _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 2
-_QUESTION_0122
-_SEND_IN_YOUR_ANSWERS
-m4_divert
-_QUESTION_0122
-_SEND_IN_YOUR_ANSWERS
-m4_divert([1])
-m4_define([_QUESTION_SQLITE],[_QUESTION_0122])
-
-_WHEN_ASKED
-10/20/24
-
-_ANSWER_2
-m4_undefine([_NBSP_MARKDOWN])m4_dnl
-_CORRECT_ANS_LOG([10/20/24], [Solomon. He is identified as the author of Ecclesiastes in 1:1. He says *vanity* many times[,] beginning at Ecclesiates[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])1:2 and ending at Ecclesiates[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])12:8.])
-
-m4_define([_NBSP_MARKDOWN], [])m4_dnl
-_CORRECT_ANS_BULLETIN_A([10/20/24], [Solomon. He is identified as the author of Ecclesiastes in 1:1. He says *vanity* many times[,] beginning at Ecclesiates[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])1:2 and ending at Ecclesiates[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])12:8.])
-m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Solomon. He is identified as the author of Ecclesiastes in 1:1. He says *vanity* many times[,] beginning at Ecclesiates[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])1:2 and ending at Ecclesiates[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])12:8.])])m4_dnl
-
-m4_define([_QUESTION_0122M_A], [Gedaliah. 2\ Kings\ 25.])m4_dnl
-m4_define([_QUESTION_0122M_B], [Enoch. Genesis\ 5])m4_dnl
-m4_define([_QUESTION_0122M_C], [Solomon. Ecclesiastes\ 1])m4_dnl
-m4_divert([2])m4_dnl
-INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0122M', '_QUESTION_0122M_A', '_QUESTION_0122M_B', '_QUESTION_0122M_C', 'C', NULL);
-m4_divert([3])m4_dnl
-INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
-m4_divert([1])m4_dnl
-m4_changequote
-
-_QUESTION
-m4_changequote(`[', `]')
 m4_define([_QUESTION_0094], [The Bible testifies that our Lord appeared to several hundred people at one time after His Resurrection. How many people---more specific than several hundred---are said to have seen Him alive? _CHAPTER_AND_VERSE where this is found.])m4_dnl Difficulty 3
 m4_define([_QUESTION_0094M], [The Bible testifies that our Lord appeared to several hundred people at one time after His Resurrection. How many people---more specific than several hundred---are said to have seen Him alive? _CHAPTER where this is found.])m4_dnl Difficulty 3
 _QUESTION_0094
@@ -145,15 +110,111 @@ _CORRECT_ANS_LOG([10/13/24], [Amos. It is written in Amos[]m4_ifdef([_NBSP_MARKD
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
 _CORRECT_ANS_BULLETIN_A([10/13/24], [Amos. It is written in Amos[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:7--8.])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Amos. It is written in Amos[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:7--8.])])m4_dnl
-m4_divert
-_CORRECT_ANS_BULLETIN_B([10/13/24], [Amos. It is written in Amos[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:7--8.])
-m4_divert([1])
 
 m4_define([_QUESTION_0125M_A], [Elijah. 1\ Kings\ 18])m4_dnl
 m4_define([_QUESTION_0125M_B], [Amos. Amos\ 4])m4_dnl
 m4_define([_QUESTION_0125M_C], [Zephaniah. Zephaniah\ 2])m4_dnl
 m4_divert([2])m4_dnl
 INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0125M', '_QUESTION_0125M_A', '_QUESTION_0125M_B', '_QUESTION_0125M_C', 'B', NULL);
+m4_divert([3])m4_dnl
+INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
+m4_divert([1])m4_dnl
+m4_changequote
+
+_QUESTION
+m4_changequote(`[', `]')
+m4_define([_QUESTION_0126], [The LORD sometimes brings disaster that we may repent. Which prophet declared the following from the LORD? **"'I would send rain on one city, and send no rain on another city; … so two or three cities would wander to another city to drink water, and would not be satisfied; yet you did not return to Me,' declares the Lord."** _CHAPTER_AND_VERSE where this is found in the Bible.])m4_dnl Difficulty 4
+m4_dnl Single quotes should be doubled because the multiple choice
+m4_dnl question will appear in an SQLite `INSERT` statement.
+m4_define([_QUESTION_0126M], [The LORD sometimes brings disaster that we may repent. Which prophet declared the following from the LORD? **"''I would send rain on one city, and send no rain on another city; … so two or three cities would wander to another city to drink water, and would not be satisfied; yet you did not return to Me,'' declares the Lord."** _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 4
+_QUESTION_0126
+_SEND_IN_YOUR_ANSWERS
+m4_define([_QUESTION_SQLITE], [The LORD sometimes brings disaster that we may repent. Which prophet declared the following from the LORD? **"''I would send rain on one city, and send no rain on another city; … so two or three cities would wander to another city to drink water, and would not be satisfied; yet you did not return to Me,'' declares the Lord."** _CHAPTER_AND_VERSE where this is found in the Bible.])
+
+_WHEN_ASKED
+
+_ANSWER_2
+m4_undefine([_NBSP_MARKDOWN])m4_dnl
+_CORRECT_ANS_LOG([MM/DD/YY], [Amos. It is written in Amos[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:7--8.])
+
+m4_define([_NBSP_MARKDOWN], [])m4_dnl
+_CORRECT_ANS_BULLETIN_A([MM/DD/YY], [Amos. It is written in Amos[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:7--8.])
+m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Amos. It is written in Amos[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:7--8.])])m4_dnl
+
+m4_define([_QUESTION_0126M_A], [Elijah. 1\ Kings\ 18])m4_dnl
+m4_define([_QUESTION_0126M_B], [Amos. Amos\ 4])m4_dnl
+m4_define([_QUESTION_0126M_C], [Zephaniah. Zephaniah\ 2])m4_dnl
+m4_divert([2])m4_dnl
+INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0126M', '_QUESTION_0126M_A', '_QUESTION_0126M_B', '_QUESTION_0126M_C', 'C', NULL);
+m4_divert([3])m4_dnl
+INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
+m4_divert([1])m4_dnl
+m4_changequote
+
+_QUESTION
+m4_changequote(`[', `]')
+m4_define([_QUESTION_0127], [There is a book of the Bible where the following is repeated twice: **"In those days there was no king in Israel. Everyone did what was right in his own eyes."** _CHAPTER_AND_VERSE for both places where this is found in the Bible.])m4_dnl Difficulty 4
+m4_dnl Single quotes should be doubled because the multiple choice
+m4_dnl question will appear in an SQLite `INSERT` statement.
+m4_define([_QUESTION_0127M], [There is a book of the Bible where the following is repeated twice: **"In those days there was no king in Israel. Everyone did what was right in his own eyes."** _CHAPTER for both places where this is found in the Bible.])m4_dnl Difficulty 4
+_QUESTION_0127
+_SEND_IN_YOUR_ANSWERS
+m4_divert
+_QUESTION_0127
+_SEND_IN_YOUR_ANSWERS
+m4_divert([1])
+m4_define([_QUESTION_SQLITE], [_QUESTION_0127])
+
+_WHEN_ASKED
+11/3/24
+
+_ANSWER_2
+m4_undefine([_NBSP_MARKDOWN])m4_dnl
+_CORRECT_ANS_LOG([11/3/24], [**"In those days there was no king in Israel. Everyone did what was right in his own eyes."** is written both in Judges[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])17:6 and in Judges[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])21:25.])
+
+m4_define([_NBSP_MARKDOWN], [])m4_dnl
+_CORRECT_ANS_BULLETIN_A([11/3/24], [**"In those days there was no king in Israel. Everyone did what was right in his own eyes."** is written both in Judges[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])17:6 and in Judges[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])21:25.])
+m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Amos. It is written in Amos[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:7--8.])])m4_dnl
+
+m4_define([_QUESTION_0127M_A], [Elijah. 1\ Kings\ 18])m4_dnl
+m4_define([_QUESTION_0127M_B], [Amos. Amos\ 4])m4_dnl
+m4_define([_QUESTION_0127M_C], [Zephaniah. Zephaniah\ 2])m4_dnl
+m4_divert([2])m4_dnl
+INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0127M', '_QUESTION_0127M_A', '_QUESTION_0127M_B', '_QUESTION_0127M_C', 'B', NULL);
+m4_divert([3])m4_dnl
+INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
+m4_divert([1])m4_dnl
+m4_changequote
+
+_QUESTION
+m4_changequote(`[', `]')
+m4_define([_QUESTION_0122], [Who wrote, **"Vanity of vanities, … All is vanity"**? _CHAPTER_AND_VERSE where this is found in the Bible.])m4_dnl Difficulty 2
+m4_dnl Single quotes should be doubled because the multiple choice
+m4_dnl question will appear in an SQLite `INSERT` statement.
+m4_define([_QUESTION_0122M], [Who wrote, **"Vanity of vanities, … All is vanity"**? _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 2
+_QUESTION_0122
+_SEND_IN_YOUR_ANSWERS
+m4_define([_QUESTION_SQLITE],[_QUESTION_0122])
+
+_WHEN_ASKED
+10/20/24
+
+_ANSWER_2
+m4_undefine([_NBSP_MARKDOWN])m4_dnl
+_CORRECT_ANS_LOG([10/20/24], [Solomon. He is identified as the author of Ecclesiastes in 1:1. He says *vanity* many times[,] beginning at Ecclesiates[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])1:2 and ending at Ecclesiates[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])12:8.])
+
+m4_define([_NBSP_MARKDOWN], [])m4_dnl
+_CORRECT_ANS_BULLETIN_A([10/20/24], [Solomon. He is identified as the author of Ecclesiastes in 1:1. He says *vanity* many times[,] beginning at Ecclesiates[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])1:2 and ending at Ecclesiates[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])12:8.])
+m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Solomon. He is identified as the author of Ecclesiastes in 1:1. He says *vanity* many times[,] beginning at Ecclesiates[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])1:2 and ending at Ecclesiates[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])12:8.])])m4_dnl
+m4_divert
+_CORRECT_ANS_BULLETIN_B([10/20/24], [Solomon. He is identified as the author of Ecclesiastes in 1:1. He says *vanity* many times[,] beginning at Ecclesiates[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])1:2 and ending at Ecclesiates[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])12:8.])
+m4_divert([1])
+
+m4_define([_QUESTION_0122M_A], [Gedaliah. 2\ Kings\ 25.])m4_dnl
+m4_define([_QUESTION_0122M_B], [Enoch. Genesis\ 5])m4_dnl
+m4_define([_QUESTION_0122M_C], [Solomon. Ecclesiastes\ 1])m4_dnl
+m4_divert([2])m4_dnl
+INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0122M', '_QUESTION_0122M_A', '_QUESTION_0122M_B', '_QUESTION_0122M_C', 'C', NULL);
 m4_divert([3])m4_dnl
 INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
 m4_divert([1])m4_dnl
@@ -198,7 +259,7 @@ m4_dnl question will appear in an SQLite `INSERT` statement.
 m4_define([_QUESTION_0121M], [After the Babylonian captivity, which two prophets prophesied in Jerusalem during the rebuilding of the temple? _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 3
 _QUESTION_0121
 _SEND_IN_YOUR_ANSWERS
-m4_define([_QUESTION_SQLITE],[_QUESTION_0121])
+m4_define([_QUESTION_SQLITE], [_QUESTION_0121])
 
 _WHEN_ASKED
 9/8/24
