@@ -230,17 +230,47 @@ _WHEN_ASKED
 
 _ANSWER_2
 m4_undefine([_NBSP_MARKDOWN])m4_dnl
-_CORRECT_ANS_LOG([11/24/24], [Nebuchadnezzar. It is written both in Daniel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:25[,] 32.])
+_CORRECT_ANS_LOG([11/24/24], [Nebuchadnezzar. It is written in Daniel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:25[,] 32.])
 
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
-_CORRECT_ANS_BULLETIN_A([11/24/24], [Nebuchadnezzar. It is written both in Daniel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:25[,] 32.])
-m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Nebuchadnezzar. It is written both in Daniel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:25[,] 32.])])m4_dnl
+_CORRECT_ANS_BULLETIN_A([11/24/24], [Nebuchadnezzar. It is written in Daniel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:25[,] 32.])
+m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Nebuchadnezzar. It is written in Daniel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:25[,] 32.])])m4_dnl
 
 m4_define([_QUESTION_0130M_A], [Manasseh. 2\ Chronicles\ 33])m4_dnl
 m4_define([_QUESTION_0130M_B], [Cyrus. Ezra\ 1])m4_dnl
 m4_define([_QUESTION_0130M_C], [Nebuchadnezzar. Daniel\ 4])m4_dnl
 m4_divert([2])m4_dnl
 INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0130M', '_QUESTION_0130M_A', '_QUESTION_0130M_B', '_QUESTION_0130M_C', 'C', NULL);
+m4_divert([3])m4_dnl
+INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
+m4_divert([1])m4_dnl
+m4_changequote
+
+_QUESTION
+m4_changequote(`[', `]')
+m4_define([_QUESTION_0131], [**"You shall not misuse the name of the Lord You God"** (Ex.\ 20:7). But there was a man, the son of an Israelite mother and Egyptian father, who did. What was his mother's name? What was his punishment? _CHAPTER_AND_VERSE where this is found in the Bible.])m4_dnl Difficulty 3
+m4_dnl Single quotes should be doubled because the multiple choice
+m4_dnl question will appear in an SQLite `INSERT` statement.
+m4_define([_QUESTION_0131M], [**"You shall not misuse the name of the Lord You God"** (Ex.\ 20:7). But there was a man, the son of an Israelite mother and Egyptian father, who did. What was his mother''s name? What was his punishment? _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 3
+_QUESTION_0131
+_SEND_IN_YOUR_ANSWERS
+m4_define([_QUESTION_SQLITE],[**"You shall not misuse the name of the Lord You God"** (Ex.\ 20:7). But there was a man, the son of an Israelite mother and Egyptian father, who did. What was his mother''s name? What was his punishment? _CHAPTER_AND_VERSE where this is found in the Bible.])
+
+_WHEN_ASKED
+
+_ANSWER_2
+m4_undefine([_NBSP_MARKDOWN])m4_dnl
+_CORRECT_ANS_LOG([MM/DD/YY], [Shelomith--that was the name of the mother of the man who blasphemed God. The man was stoned. It is written in Leviticus[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])24:11[,] 14--16.])
+
+m4_define([_NBSP_MARKDOWN], [])m4_dnl
+_CORRECT_ANS_BULLETIN_A([MM/DD/YY], [Shelomith---that was the name of the mother of the man who blasphemed God. The man was stoned. It is written in Leviticus[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])24:11[,] 14--16.])
+m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Shelomith---that was the name of the mother of the man who blasphemed God. The man was stoned. It is written in Leviticus[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])24:11[,] 14--16.])])m4_dnl
+
+m4_define([_QUESTION_0131M_A], [Shelomith. Leviticus\ 24])m4_dnl
+m4_define([_QUESTION_0131M_B], [Hoglah. Numbers\ 36])m4_dnl
+m4_define([_QUESTION_0131M_C], [Deborah. Judges\ 4])m4_dnl
+m4_divert([2])m4_dnl
+INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0131M', '_QUESTION_0131M_A', '_QUESTION_0131M_B', '_QUESTION_0131M_C', 'A', NULL);
 m4_divert([3])m4_dnl
 INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
 m4_divert([1])m4_dnl
