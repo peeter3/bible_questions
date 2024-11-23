@@ -123,39 +123,6 @@ m4_changequote
 
 _QUESTION
 m4_changequote(`[', `]')
-m4_define([_QUESTION_0129], [**"LORD, You were favorable to your land; You restored the fortunes of Jacob."** _PSALM_1ST_VERSE_Q])m4_dnl Difficulty 2
-m4_define([_QUESTION_0129M], [_QUESTION_0129])m4_dnl Difficulty 2
-_QUESTION_0129
-_SEND_IN_YOUR_ANSWERS
-m4_divert
-_QUESTION_0129
-_SEND_IN_YOUR_ANSWERS
-m4_divert([1])
-m4_define([_QUESTION_SQLITE], [_QUESTION_0129])
-
-_WHEN_ASKED
-11/17/24
-
-_ANSWER_2
-m4_undefine([_NBSP_MARKDOWN])m4_dnl
-_CORRECT_ANS_LOG([11/17/24], [Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])85.])
-
-m4_define([_NBSP_MARKDOWN], [])m4_dnl
-_CORRECT_ANS_BULLETIN_A([11/17/24], [Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])85.])
-m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])85.])])m4_dnl
-
-m4_define([_QUESTION_0129M_A], [Psalm\ 85])m4_dnl
-m4_define([_QUESTION_0129M_B], [Psalm\ 55])m4_dnl
-m4_define([_QUESTION_0129M_C], [Psalm\ 91])m4_dnl
-m4_divert([2])m4_dnl
-INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0129M', '_QUESTION_0129M_A', '_QUESTION_0129M_B', '_QUESTION_0129M_C', 'A', NULL);
-m4_divert([3])m4_dnl
-INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
-m4_divert([1])m4_dnl
-m4_changequote
-
-_QUESTION
-m4_changequote(`[', `]')
 m4_define([_QUESTION_0128], [**"Give ear, O Shepherd of Israel, you who lead Joseph like a flock. You who are enthroned upon the cherubim, shine forth."** _PSALM_1ST_VERSE_Q])m4_dnl Difficulty 2
 m4_define([_QUESTION_0128M], [_QUESTION_0128])m4_dnl Difficulty 2
 _QUESTION_0128
@@ -172,9 +139,6 @@ _CORRECT_ANS_LOG([11/10/24], [Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])80.])
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
 _CORRECT_ANS_BULLETIN_A([11/10/24], [Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])80.])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])80.])])m4_dnl
-m4_divert
-_CORRECT_ANS_BULLETIN_B([11/10/24], [Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])80.])
-m4_divert([1])
 
 m4_define([_QUESTION_0128M_A], [Psalm\ 80])m4_dnl
 m4_define([_QUESTION_0128M_B], [Psalm\ 51])m4_dnl
@@ -242,6 +206,41 @@ m4_define([_QUESTION_0127M_B], [Amos. Amos\ 4])m4_dnl
 m4_define([_QUESTION_0127M_C], [Zephaniah. Zephaniah\ 2])m4_dnl
 m4_divert([2])m4_dnl
 INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0127M', '_QUESTION_0127M_A', '_QUESTION_0127M_B', '_QUESTION_0127M_C', 'B', NULL);
+m4_divert([3])m4_dnl
+INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
+m4_divert([1])m4_dnl
+m4_changequote
+
+_QUESTION
+m4_changequote(`[', `]')
+m4_define([_QUESTION_0130], [Who is the king who was humbled and made to eat grass like an ox? _CHAPTER_AND_VERSE where this is found in the Bible.])m4_dnl Difficulty 3
+m4_dnl Single quotes should be doubled because the multiple choice
+m4_dnl question will appear in an SQLite `INSERT` statement.
+m4_define([_QUESTION_0130M], [Who is the king who was humbled and made to eat grass like an ox? _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 3
+_QUESTION_0130
+_SEND_IN_YOUR_ANSWERS
+m4_divert
+_QUESTION_0130
+_SEND_IN_YOUR_ANSWERS
+m4_divert([1])
+m4_define([_QUESTION_SQLITE], [_QUESTION_0130])
+
+_WHEN_ASKED
+11/24/24
+
+_ANSWER_2
+m4_undefine([_NBSP_MARKDOWN])m4_dnl
+_CORRECT_ANS_LOG([11/24/24], [Nebuchadnezzar. It is written both in Daniel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:25[,] 32.])
+
+m4_define([_NBSP_MARKDOWN], [])m4_dnl
+_CORRECT_ANS_BULLETIN_A([11/24/24], [Nebuchadnezzar. It is written both in Daniel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:25[,] 32.])
+m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Nebuchadnezzar. It is written both in Daniel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:25[,] 32.])])m4_dnl
+
+m4_define([_QUESTION_0130M_A], [Manasseh. 2\ Chronicles\ 33])m4_dnl
+m4_define([_QUESTION_0130M_B], [Cyrus. Ezra\ 1])m4_dnl
+m4_define([_QUESTION_0130M_C], [Nebuchadnezzar. Daniel\ 4])m4_dnl
+m4_divert([2])m4_dnl
+INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0130M', '_QUESTION_0130M_A', '_QUESTION_0130M_B', '_QUESTION_0130M_C', 'C', NULL);
 m4_divert([3])m4_dnl
 INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
 m4_divert([1])m4_dnl
@@ -485,6 +484,38 @@ m4_define([_QUESTION_0100M_B], [Thanksgiving. Ephesians\ 5])m4_dnl
 m4_define([_QUESTION_0100M_C], [Praise. 1\ Corinthians\ 14])m4_dnl
 m4_divert([2])m4_dnl
 INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0100M', '_QUESTION_0100M_A', '_QUESTION_0100M_B', '_QUESTION_0100M_C', 'B', NULL);
+m4_divert([3])m4_dnl
+INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
+m4_divert([1])m4_dnl
+m4_changequote
+
+_QUESTION
+m4_changequote(`[', `]')
+m4_define([_QUESTION_0129], [**"LORD, You were favorable to your land; You restored the fortunes of Jacob."** _PSALM_1ST_VERSE_Q])m4_dnl Difficulty 2
+m4_define([_QUESTION_0129M], [_QUESTION_0129])m4_dnl Difficulty 2
+_QUESTION_0129
+_SEND_IN_YOUR_ANSWERS
+m4_define([_QUESTION_SQLITE], [_QUESTION_0129])
+
+_WHEN_ASKED
+11/17/24
+
+_ANSWER_2
+m4_undefine([_NBSP_MARKDOWN])m4_dnl
+_CORRECT_ANS_LOG([11/17/24], [Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])85.])
+
+m4_define([_NBSP_MARKDOWN], [])m4_dnl
+_CORRECT_ANS_BULLETIN_A([11/17/24], [Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])85.])
+m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])85.])])m4_dnl
+m4_divert
+_CORRECT_ANS_BULLETIN_B([11/17/24], [Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])85.])
+m4_divert([1])
+
+m4_define([_QUESTION_0129M_A], [Psalm\ 85])m4_dnl
+m4_define([_QUESTION_0129M_B], [Psalm\ 55])m4_dnl
+m4_define([_QUESTION_0129M_C], [Psalm\ 91])m4_dnl
+m4_divert([2])m4_dnl
+INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0129M', '_QUESTION_0129M_A', '_QUESTION_0129M_B', '_QUESTION_0129M_C', 'A', NULL);
 m4_divert([3])m4_dnl
 INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
 m4_divert([1])m4_dnl
