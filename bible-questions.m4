@@ -230,11 +230,11 @@ _WHEN_ASKED
 
 _ANSWER_2
 m4_undefine([_NBSP_MARKDOWN])m4_dnl
-_CORRECT_ANS_LOG([11/24/24], [Nebuchadnezzar. It is written in Daniel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:25[,] 32.])
+_CORRECT_ANS_LOG([11/24/24], [Nebuchadnezzar. It is written in Daniel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:25[,] 32; 5:21.])
 
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
-_CORRECT_ANS_BULLETIN_A([11/24/24], [Nebuchadnezzar. It is written in Daniel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:25[,] 32.])
-m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Nebuchadnezzar. It is written in Daniel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:25[,] 32.])])m4_dnl
+_CORRECT_ANS_BULLETIN_A([11/24/24], [Nebuchadnezzar. It is written in Daniel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:25[,] 32; 5:21.])
+m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Nebuchadnezzar. It is written in Daniel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:25[,] 32; 5:21.])])m4_dnl
 
 m4_define([_QUESTION_0130M_A], [Manasseh. 2\ Chronicles\ 33])m4_dnl
 m4_define([_QUESTION_0130M_B], [Cyrus. Ezra\ 1])m4_dnl
@@ -290,11 +290,11 @@ _WHEN_ASKED
 
 _ANSWER_2
 m4_undefine([_NBSP_MARKDOWN])m4_dnl
-_CORRECT_ANS_LOG([MM/DD/YY], [Nebuchadnezzar. It is written in Daniel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:2.])
+_CORRECT_ANS_LOG([MM/DD/YY], [Nebuchadnezzar. It is written in Daniel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:2[,] 11.])
 
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
-_CORRECT_ANS_BULLETIN_A([MM/DD/YY], [Nebuchadnezzar. It is written in Daniel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:2.])
-m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Nebuchadnezzar. It is written in Daniel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:2.])])m4_dnl
+_CORRECT_ANS_BULLETIN_A([MM/DD/YY], [Nebuchadnezzar. It is written in Daniel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:2[,] 11.])
+m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Nebuchadnezzar. It is written in Daniel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:2[,] 11.])])m4_dnl
 
 m4_define([_QUESTION_0132M_A], [Nebuchadnezzar. Daniel\ 5])m4_dnl
 m4_define([_QUESTION_0132M_B], [Cyrus. Daniel\ 10])m4_dnl
