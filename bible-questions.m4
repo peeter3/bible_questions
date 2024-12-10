@@ -92,42 +92,6 @@ m4_changequote
 
 _QUESTION
 m4_changequote(`[', `]')
-m4_define([_QUESTION_0123], [Which prophet prophesied **"Out of Egypt I called my Son"**? _CHAPTER_AND_VERSE where this is found in the Bible.])m4_dnl Difficulty 3
-m4_dnl Single quotes should be doubled because the multiple choice
-m4_dnl question will appear in an SQLite `INSERT` statement.
-m4_define([_QUESTION_0123M], [Which prophet prophesied **"Out of Egypt I called my Son"**? _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 3
-_QUESTION_0123
-_SEND_IN_YOUR_ANSWERS
-m4_divert
-_QUESTION_0123
-_SEND_IN_YOUR_ANSWERS
-m4_divert([1])
-m4_define([_QUESTION_SQLITE],[_QUESTION_0123])
-
-_WHEN_ASKED
-12/8/24
-
-_ANSWER_2
-m4_undefine([_NBSP_MARKDOWN])m4_dnl
-_CORRECT_ANS_LOG([12/8/24], [Hosea. It is written in Hosea[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:1.])
-
-m4_define([_NBSP_MARKDOWN], [])m4_dnl
-_CORRECT_ANS_BULLETIN_A([12/8/24], [Hosea. It is written in Hosea[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:1.])
-m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Hosea. It is written in Hosea[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:1.])])m4_dnl
-
-m4_define([_QUESTION_0123M_A], [Amos. Amos\ 8.])m4_dnl
-m4_define([_QUESTION_0123M_B], [Hosea.
-Hosea\ 11])m4_dnl
-m4_define([_QUESTION_0123M_C], [Jeremiah. Jeremiah\ 37])m4_dnl
-m4_divert([2])m4_dnl
-INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0123M', '_QUESTION_0123M_A', '_QUESTION_0123M_B', '_QUESTION_0123M_C', 'B', NULL);
-m4_divert([3])m4_dnl
-INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
-m4_divert([1])m4_dnl
-m4_changequote
-
-_QUESTION
-m4_changequote(`[', `]')
 m4_define([_QUESTION_0125], [The LORD sometimes brings disaster that we may repent. Which prophet declared the following from the LORD? **"'I would send rain on one city, and send no rain on another city; … so two or three cities would wander to another city to drink water, and would not be satisfied; yet you did not return to Me,' declares the Lord."** _CHAPTER_AND_VERSE where this is found in the Bible.])m4_dnl Difficulty 4
 m4_dnl Single quotes should be doubled because the multiple choice
 m4_dnl question will appear in an SQLite `INSERT` statement.
@@ -297,15 +261,47 @@ _CORRECT_ANS_LOG([12/1/24], [Nebuchadnezzar. It is written in Daniel[]m4_ifdef([
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
 _CORRECT_ANS_BULLETIN_A([12/1/24], [Nebuchadnezzar. It is written in Daniel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:2[,] 11.])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Nebuchadnezzar. It is written in Daniel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:2[,] 11.])])m4_dnl
-m4_divert
-_CORRECT_ANS_BULLETIN_B([12/1/24], [Nebuchadnezzar. It is written in Daniel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:2[,] 11.])
-m4_divert([1])
 
 m4_define([_QUESTION_0132M_A], [Nebuchadnezzar. Daniel\ 5])m4_dnl
 m4_define([_QUESTION_0132M_B], [Cyrus. Daniel\ 10])m4_dnl
 m4_define([_QUESTION_0132M_C], [Josiah. 2\ Chronicles\ 34])m4_dnl
 m4_divert([2])m4_dnl
 INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0132M', '_QUESTION_0132M_A', '_QUESTION_0132M_B', '_QUESTION_0132M_C', 'A', NULL);
+m4_divert([3])m4_dnl
+INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
+m4_divert([1])m4_dnl
+m4_changequote
+
+_QUESTION
+m4_changequote(`[', `]')
+m4_define([_QUESTION_0133], [The Holy Spirit often uses metaphors (word pictures). These metaphors can be lost in translation. One such case is probably this one: an Old Testament prophet said, **"I will search Jerusalem with candles, and punish the men that are _settled on their lees_: that say in their heart, The LORD will not do good, neither will he do evil."** (KJV) **"I will search Jerusalem with lamps, and I will punish the men who are _complacent_, those who say in their hearts, 'The LORD will not do good, nor will he do ill.'"** (ESV). Lees are sediment left behind by fermentation. But who is the prophet who said this? _CHAPTER_AND_VERSE where this is found in the Bible.])m4_dnl Difficulty 4
+m4_dnl Single quotes should be doubled because the multiple choice
+m4_dnl question will appear in an SQLite `INSERT` statement.
+m4_define([_QUESTION_0133M], [The Holy Spirit often uses metaphors (word pictures). These metaphors can be lost in translation. One such case is probably this one: an Old Testament prophet said, **"I will search Jerusalem with candles, and punish the men that are _settled on their lees_: that say in their heart, The LORD will not do good, neither will he do evil."** (KJV) **"I will search Jerusalem with lamps, and I will punish the men who are _complacent_, those who say in their hearts, ''The LORD will not do good, nor will he do ill.''"** (ESV). Lees are sediment left behind by fermentation. But who is the prophet who said this? _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 4
+_QUESTION_0133
+_SEND_IN_YOUR_ANSWERS
+m4_divert
+_QUESTION_0133
+_SEND_IN_YOUR_ANSWERS
+m4_divert([1])
+m4_define([_QUESTION_SQLITE], [The Holy Spirit often uses metaphors (word pictures). These metaphors can be lost in translation. One such case is probably this one: an Old Testament prophet said, **"I will search Jerusalem with candles, and punish the men that are _settled on their lees_: that say in their heart, The LORD will not do good, neither will he do evil."** (KJV) **"I will search Jerusalem with lamps, and I will punish the men who are _complacent_, those who say in their hearts, ''The LORD will not do good, nor will he do ill.''"** (ESV). Lees are sediment left behind by fermentation. But who is the prophet who said this? _CHAPTER_AND_VERSE where this is found in the Bible.])
+
+_WHEN_ASKED
+12/15/24
+
+_ANSWER_2
+m4_undefine([_NBSP_MARKDOWN])m4_dnl
+_CORRECT_ANS_LOG([12/15/24], [Zephaniah. It is written in Zephaniah[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])1:12.])
+
+m4_define([_NBSP_MARKDOWN], [])m4_dnl
+_CORRECT_ANS_BULLETIN_A([12/15/24], [Zephaniah. It is written in Zephaniah[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])1:12.])
+m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Zephaniah. It is written in Zephaniah[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])1:12.])])m4_dnl
+
+m4_define([_QUESTION_0133M_A], [Ezekiel. Ezekiel\ 19])m4_dnl
+m4_define([_QUESTION_0133M_B], [Jonah. Jonah\ 2])m4_dnl
+m4_define([_QUESTION_0133M_C], [Zephaniah. Zephaniah\ 1])m4_dnl
+m4_divert([2])m4_dnl
+INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0133M', '_QUESTION_0133M_A', '_QUESTION_0133M_B', '_QUESTION_0133M_C', 'C', NULL);
 m4_divert([3])m4_dnl
 INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
 m4_divert([1])m4_dnl
@@ -1625,6 +1621,41 @@ m4_define([_QUESTION_0064M_B], [Psalm\ 43])m4_dnl
 m4_define([_QUESTION_0064M_C], [Psalm\ 149])m4_dnl
 m4_divert([2])m4_dnl
 INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0064M', '_QUESTION_0064M_A', '_QUESTION_0064M_B', '_QUESTION_0064M_C', 'B', NULL);
+m4_divert([3])m4_dnl
+INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
+m4_divert([1])m4_dnl
+m4_changequote
+
+_QUESTION
+m4_changequote(`[', `]')
+m4_define([_QUESTION_0123], [Which prophet prophesied **"Out of Egypt I called my Son"**? _CHAPTER_AND_VERSE where this is found in the Bible.])m4_dnl Difficulty 3
+m4_dnl Single quotes should be doubled because the multiple choice
+m4_dnl question will appear in an SQLite `INSERT` statement.
+m4_define([_QUESTION_0123M], [Which prophet prophesied **"Out of Egypt I called my Son"**? _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 3
+_QUESTION_0123
+_SEND_IN_YOUR_ANSWERS
+m4_define([_QUESTION_SQLITE],[_QUESTION_0123])
+
+_WHEN_ASKED
+12/8/24
+
+_ANSWER_2
+m4_undefine([_NBSP_MARKDOWN])m4_dnl
+_CORRECT_ANS_LOG([12/8/24], [Hosea. It is written in Hosea[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:1.])
+
+m4_define([_NBSP_MARKDOWN], [])m4_dnl
+_CORRECT_ANS_BULLETIN_A([12/8/24], [Hosea. It is written in Hosea[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:1.])
+m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Hosea. It is written in Hosea[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:1.])])m4_dnl
+m4_divert
+_CORRECT_ANS_BULLETIN_B([12/8/24], [Hosea. It is written in Hosea[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:1.])
+m4_divert([1])
+
+m4_define([_QUESTION_0123M_A], [Amos. Amos\ 8.])m4_dnl
+m4_define([_QUESTION_0123M_B], [Hosea.
+Hosea\ 11])m4_dnl
+m4_define([_QUESTION_0123M_C], [Jeremiah. Jeremiah\ 37])m4_dnl
+m4_divert([2])m4_dnl
+INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0123M', '_QUESTION_0123M_A', '_QUESTION_0123M_B', '_QUESTION_0123M_C', 'B', NULL);
 m4_divert([3])m4_dnl
 INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
 m4_divert([1])m4_dnl
