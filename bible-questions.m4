@@ -309,6 +309,36 @@ m4_changequote
 
 _QUESTION
 m4_changequote(`[', `]')
+m4_define([_QUESTION_0134], [Who are the parents of Moab? _CHAPTER_AND_VERSE where this is found in the Bible.])m4_dnl Difficulty 3
+m4_dnl Single quotes should be doubled because the multiple choice
+m4_dnl question will appear in an SQLite `INSERT` statement.
+m4_define([_QUESTION_0134M], [Who are the parents of Moab? _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 3
+_QUESTION_0134
+_SEND_IN_YOUR_ANSWERS
+m4_define([_QUESTION_SQLITE], [_QUESTION_0134])
+
+_WHEN_ASKED
+
+_ANSWER_2
+m4_undefine([_NBSP_MARKDOWN])m4_dnl
+_CORRECT_ANS_LOG([MM/DD/YY], [Lot and his oldest daughter. It is written in Genesis[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])19:37.])
+
+m4_define([_NBSP_MARKDOWN], [])m4_dnl
+_CORRECT_ANS_BULLETIN_A([MM/DD/YY], [Lot and his oldest daughter. It is written in Genesis[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])19:37.])
+m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Lot and his oldest daughter. It is written in Genesis[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])19:37.])])m4_dnl
+
+m4_define([_QUESTION_0134M_A], [Abraham and Hagar. Genesis\ 16])m4_dnl
+m4_define([_QUESTION_0134M_B], [Lot and his oldest daughter. Genesis\ 19])m4_dnl
+m4_define([_QUESTION_0134M_C], [Samson and Delilah. Judges\ 16])m4_dnl
+m4_divert([2])m4_dnl
+INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0134M', '_QUESTION_0134M_A', '_QUESTION_0134M_B', '_QUESTION_0134M_C', 'B', NULL);
+m4_divert([3])m4_dnl
+INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
+m4_divert([1])m4_dnl
+m4_changequote
+
+_QUESTION
+m4_changequote(`[', `]')
 m4_define([_QUESTION_0122], [Who wrote, **"Vanity of vanities, … All is vanity"**? _CHAPTER_AND_VERSE where this is found in the Bible.])m4_dnl Difficulty 2
 m4_dnl Single quotes should be doubled because the multiple choice
 m4_dnl question will appear in an SQLite `INSERT` statement.
