@@ -158,16 +158,21 @@ m4_dnl question will appear in an SQLite `INSERT` statement.
 m4_define([_QUESTION_0126M], [The LORD sometimes brings disaster that we may repent. Which prophet declared the following from the LORD? **"''I would send rain on one city, and send no rain on another city; … so two or three cities would wander to another city to drink water, and would not be satisfied; yet you did not return to Me,'' declares the Lord."** _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 4
 _QUESTION_0126
 _SEND_IN_YOUR_ANSWERS
+m4_divert
+_QUESTION_0126
+_SEND_IN_YOUR_ANSWERS
+m4_divert([1])
 m4_define([_QUESTION_SQLITE], [The LORD sometimes brings disaster that we may repent. Which prophet declared the following from the LORD? **"''I would send rain on one city, and send no rain on another city; … so two or three cities would wander to another city to drink water, and would not be satisfied; yet you did not return to Me,'' declares the Lord."** _CHAPTER_AND_VERSE where this is found in the Bible.])
 
 _WHEN_ASKED
+12/22/24
 
 _ANSWER_2
 m4_undefine([_NBSP_MARKDOWN])m4_dnl
-_CORRECT_ANS_LOG([MM/DD/YY], [Amos. It is written in Amos[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:7--8.])
+_CORRECT_ANS_LOG([12/22/24], [Amos. It is written in Amos[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:7--8.])
 
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
-_CORRECT_ANS_BULLETIN_A([MM/DD/YY], [Amos. It is written in Amos[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:7--8.])
+_CORRECT_ANS_BULLETIN_A([12/22/24], [Amos. It is written in Amos[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:7--8.])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Amos. It is written in Amos[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:7--8.])])m4_dnl
 
 m4_define([_QUESTION_0126M_A], [Elijah. 1\ Kings\ 18])m4_dnl
@@ -280,10 +285,6 @@ m4_dnl question will appear in an SQLite `INSERT` statement.
 m4_define([_QUESTION_0133M], [The Holy Spirit often uses metaphors (word pictures). These metaphors can be lost in translation. One such case is probably this one: an Old Testament prophet said, **"I will search Jerusalem with candles, and punish the men that are _settled on their lees_: that say in their heart, The LORD will not do good, neither will he do evil."** (KJV) **"I will search Jerusalem with lamps, and I will punish the men who are _complacent_, those who say in their hearts, ''The LORD will not do good, nor will he do ill.''"** (ESV). Lees are sediment left behind by fermentation. But who is the prophet who said this? _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 4
 _QUESTION_0133
 _SEND_IN_YOUR_ANSWERS
-m4_divert
-_QUESTION_0133
-_SEND_IN_YOUR_ANSWERS
-m4_divert([1])
 m4_define([_QUESTION_SQLITE], [The Holy Spirit often uses metaphors (word pictures). These metaphors can be lost in translation. One such case is probably this one: an Old Testament prophet said, **"I will search Jerusalem with candles, and punish the men that are _settled on their lees_: that say in their heart, The LORD will not do good, neither will he do evil."** (KJV) **"I will search Jerusalem with lamps, and I will punish the men who are _complacent_, those who say in their hearts, ''The LORD will not do good, nor will he do ill.''"** (ESV). Lees are sediment left behind by fermentation. But who is the prophet who said this? _CHAPTER_AND_VERSE where this is found in the Bible.])
 
 _WHEN_ASKED
@@ -296,6 +297,9 @@ _CORRECT_ANS_LOG([12/15/24], [Zephaniah. It is written in Zephaniah[]m4_ifdef([_
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
 _CORRECT_ANS_BULLETIN_A([12/15/24], [Zephaniah. It is written in Zephaniah[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])1:12.])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Zephaniah. It is written in Zephaniah[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])1:12.])])m4_dnl
+m4_divert
+_CORRECT_ANS_BULLETIN_B([12/15/24], [Zephaniah. It is written in Zephaniah[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])1:12.])
+m4_divert([1])
 
 m4_define([_QUESTION_0133M_A], [Ezekiel. Ezekiel\ 19])m4_dnl
 m4_define([_QUESTION_0133M_B], [Jonah. Jonah\ 2])m4_dnl
@@ -1676,9 +1680,6 @@ _CORRECT_ANS_LOG([12/8/24], [Hosea. It is written in Hosea[]m4_ifdef([_NBSP_MARK
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
 _CORRECT_ANS_BULLETIN_A([12/8/24], [Hosea. It is written in Hosea[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:1.])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Hosea. It is written in Hosea[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:1.])])m4_dnl
-m4_divert
-_CORRECT_ANS_BULLETIN_B([12/8/24], [Hosea. It is written in Hosea[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:1.])
-m4_divert([1])
 
 m4_define([_QUESTION_0123M_A], [Amos. Amos\ 8.])m4_dnl
 m4_define([_QUESTION_0123M_B], [Hosea.
