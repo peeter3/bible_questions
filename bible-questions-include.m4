@@ -35,6 +35,7 @@ m4_define(`_CHAPTER', `Please give the chapter')m4_dnl
 m4_define(`_CHAPTER_LC', `please give the chapter')m4_dnl
 m4_define(`_PSALM_AND_VERSE', `Please give the psalm and verse')m4_dnl
 m4_define(`_PSALM', `Please give the psalm')m4_dnl
+m4_define(`_PSALMS', `Please give the psalms')m4_dnl
 m4_define(`_PSALM_1ST_VERSE_Q', `This is the first verse of which psalm?')m4_dnl
 m4_define(`_SEND_IN_YOUR_ANSWERS', `Please text your answers or call them in to 216-215-5364.')m4_dnl
 m4_define(`_ONE_OR_MORE', `Please give one or more Bible references, chapter and verse, that support your answer.')m4_dnl

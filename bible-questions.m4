@@ -152,16 +152,47 @@ m4_changequote
 
 _QUESTION
 m4_changequote(`[', `]')
+m4_define([_QUESTION_0136], [The are two psalms where we can find this written: **"Those who make them become like them; so do all who trust in them."** _PSALMS where this statement is found. What are we to learn from it?])m4_dnl Difficulty 4
+m4_dnl Single quotes should be doubled because the multiple choice
+m4_dnl question will appear in an SQLite `INSERT` statement.
+m4_define([_QUESTION_0136M], [The are two psalms where we can find this written: **"Those who make them become like them; so do all who trust in them."** _PSALMS where this statement is found.])m4_dnl Difficulty 4
+_QUESTION_0136
+_SEND_IN_YOUR_ANSWERS
+m4_divert
+_QUESTION_0136
+_SEND_IN_YOUR_ANSWERS
+m4_divert([1])
+m4_define([_QUESTION_SQLITE], [_QUESTION_0136])
+
+_WHEN_ASKED
+1/5/24
+
+_ANSWER_2
+m4_undefine([_NBSP_MARKDOWN])m4_dnl
+_CORRECT_ANS_LOG([1/5/24], [it is written in both Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])115 and Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])135. Please do compare the passages in these psalms. The point being made is that idols are worthless; they have mouths[,] but do not speak; eyes[,] but do not see; ears[,] but do not hear; noses[,] but do not smell; hands[,] but do not feel; feet[,] but do not walk. **"Those who make them become like them; so do all who trust in them."**])
+
+m4_define([_NBSP_MARKDOWN], [])m4_dnl
+_CORRECT_ANS_BULLETIN_A([1/5/24], [it is written in both Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])115 and Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])135. Please do compare the passages in these psalms. The point being made is that idols are worthless; they have mouths[,] but do not speak; eyes[,] but do not see; ears[,] but do not hear; noses[,] but do not smell; hands[,] but do not feel; feet[,] but do not walk. **"Those who make them become like them; so do all who trust in them."**])
+m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([it is written in both Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])115 and Psalm[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])135. Please do compare the passages in these psalms. The point being made is that idols are worthless; they have mouths[,] but do not speak; eyes[,] but do not see; ears[,] but do not hear; noses[,] but do not smell; hands[,] but do not feel; feet[,] but do not walk. **"Those who make them become like them; so do all who trust in them."**])])m4_dnl
+
+m4_define([_QUESTION_0136M_A], [Psalms\ 42 and 105])m4_dnl
+m4_define([_QUESTION_0136M_B], [Psalms\ 40 and 102])m4_dnl
+m4_define([_QUESTION_0136M_C], [Psalms\ 115 and 135])m4_dnl
+m4_divert([2])m4_dnl
+INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0136M', '_QUESTION_0136M_A', '_QUESTION_0136M_B', '_QUESTION_0136M_C', 'C', NULL);
+m4_divert([3])m4_dnl
+INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
+m4_divert([1])m4_dnl
+m4_changequote
+
+_QUESTION
+m4_changequote(`[', `]')
 m4_define([_QUESTION_0135], [The famous Simeon of the New Testament held the infant Jesus in his arms (Luke\ 2:25--28). Who is the famous Simeon of the Old Testament? _CHAPTER_AND_VERSE where this is found in the Bible.])m4_dnl Difficulty 2
 m4_dnl Single quotes should be doubled because the multiple choice
 m4_dnl question will appear in an SQLite `INSERT` statement.
 m4_define([_QUESTION_0135M], [The famous Simeon of the New Testament held the infant Jesus in his arms (Luke\ 2:25--28). Who is the famous Simeon of the Old Testament? _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 2
 _QUESTION_0135
 _SEND_IN_YOUR_ANSWERS
-m4_divert
-_QUESTION_0135
-_SEND_IN_YOUR_ANSWERS
-m4_divert([1])
 m4_define([_QUESTION_SQLITE], [_QUESTION_0135])
 
 _WHEN_ASKED
@@ -174,6 +205,9 @@ _CORRECT_ANS_LOG([12/29/24], [that the famous Simeon of the Old Testament is the
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
 _CORRECT_ANS_BULLETIN_A([12/29/24], [that the famous Simeon of the Old Testament is the second-born son of Israel; his mother is Leah. It is written in Genesis[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])29:33. This Simeon is mentioned many times after that (Gen.[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])34:25; 35:23; 42;24; 43:23; 46;10; 49:5; Num.[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])1:23; 26:12; Deut.[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])27:12; Josh.[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])19:9; Judges[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])1:17).])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([that the famous Simeon of the Old Testament is the second-born son of Israel; his mother is Leah. It is written in Genesis[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])29:33. This Simeon is mentioned many times after that (Gen.[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])34:25; 35:23; 42;24; 43:23; 46;10; 49:5; Num.[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])1:23; 26:12; Deut.[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])27:12; Josh.[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])19:9; Judges[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])1:17).])])m4_dnl
+m4_divert
+_CORRECT_ANS_BULLETIN_B([12/29/24], [that the famous Simeon of the Old Testament is the second-born son of Israel; his mother is Leah. It is written in Genesis[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])29:33. This Simeon is mentioned many times after that (Gen.[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])34:25; 35:23; 42;24; 43:23; 46;10; 49:5; Num.[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])1:23; 26:12; Deut.[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])27:12; Josh.[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])19:9; Judges[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])1:17).])
+m4_divert([1])
 
 m4_define([_QUESTION_0135M_A], [He is the son of Jacob and Leah. Genesis\ 29])m4_dnl
 m4_define([_QUESTION_0135M_B], [He is the son of David who built the temple. 1\ Chronicles\ 22])m4_dnl
@@ -205,9 +239,6 @@ _CORRECT_ANS_LOG([12/22/24], [Amos. It is written in Amos[]m4_ifdef([_NBSP_MARKD
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
 _CORRECT_ANS_BULLETIN_A([12/22/24], [Amos. It is written in Amos[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:7--8.])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Amos. It is written in Amos[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:7--8.])])m4_dnl
-m4_divert
-_CORRECT_ANS_BULLETIN_B([12/22/24], [Amos. It is written in Amos[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:7--8.])
-m4_divert([1])
 
 m4_define([_QUESTION_0126M_A], [Elijah. 1\ Kings\ 18])m4_dnl
 m4_define([_QUESTION_0126M_B], [Amos. Amos\ 4])m4_dnl
