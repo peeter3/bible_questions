@@ -32,6 +32,41 @@ m4_divert(`1')
 
 _QUESTION
 m4_changequote(`[', `]')
+m4_define([_QUESTION_0137], [Our Lord says, **"Let your light shine before others, so that they may see your good works and give glory to your Father who is in heaven."** _CHAPTER_AND_VERSE where this is found in the Bible.])m4_dnl Difficulty 2
+m4_dnl Single quotes should be doubled because the multiple choice
+m4_dnl question will appear in an SQLite `INSERT` statement.
+m4_define([_QUESTION_0137M], [Our Lord says, **"Let your light shine before others, so that they may see your good works and give glory to your Father who is in heaven."** _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 2
+_QUESTION_0137
+_SEND_IN_YOUR_ANSWERS
+m4_divert
+_QUESTION_0137
+_SEND_IN_YOUR_ANSWERS
+m4_divert([1])
+m4_define([_QUESTION_SQLITE],[_QUESTION_0137])
+
+_WHEN_ASKED
+1/25/25
+
+_ANSWER_2
+m4_undefine([_NBSP_MARKDOWN])m4_dnl
+_CORRECT_ANS_LOG([1/25/25], [our Lord says[,] "Let your light shine before others[,] so that they may see your good works and give glory to your Father who is in heaven" in Matthew[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:16.])
+
+m4_define([_NBSP_MARKDOWN], [])m4_dnl
+_CORRECT_ANS_BULLETIN_A([1/25/25], [our Lord says[,] **"Let your light shine before others[,] so that they may see your good works and give glory to your Father who is in heaven"** in Matthew[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:16.])
+m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([our Lord says[,] **"Let your light shine before others[,] so that they may see your good works and give glory to your Father who is in heaven"** in Matthew[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:16.])])m4_dnl
+
+m4_define([_QUESTION_0137M_A], [Hebrews\ 3])m4_dnl
+m4_define([_QUESTION_0137M_B], [Mark\ 10])m4_dnl
+m4_define([_QUESTION_0137M_C], [Matthew\ 5])m4_dnl
+m4_divert([2])m4_dnl
+INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0137M', '_QUESTION_0137M_A', '_QUESTION_0137M_B', '_QUESTION_0137M_C', 'C', NULL);
+m4_divert([3])m4_dnl
+INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
+m4_divert([1])m4_dnl
+m4_changequote
+
+_QUESTION
+m4_changequote(`[', `]')
 m4_define([_QUESTION_0094], [The Bible testifies that our Lord appeared to several hundred people at one time after His Resurrection. How many people---more specific than several hundred---are said to have seen Him alive? _CHAPTER_AND_VERSE where this is found.])m4_dnl Difficulty 3
 m4_define([_QUESTION_0094M], [The Bible testifies that our Lord appeared to several hundred people at one time after His Resurrection. How many people---more specific than several hundred---are said to have seen Him alive? _CHAPTER where this is found.])m4_dnl Difficulty 3
 _QUESTION_0094
@@ -313,10 +348,6 @@ m4_dnl question will appear in an SQLite `INSERT` statement.
 m4_define([_QUESTION_0134M], [Who are the parents of Moab? _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 3
 _QUESTION_0134
 _SEND_IN_YOUR_ANSWERS
-m4_divert
-_QUESTION_0134
-_SEND_IN_YOUR_ANSWERS
-m4_divert([1])
 m4_define([_QUESTION_SQLITE], [_QUESTION_0134])
 
 _WHEN_ASKED
@@ -329,6 +360,9 @@ _CORRECT_ANS_LOG([1/19/25], [Lot and his oldest daughter. It is written in Genes
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
 _CORRECT_ANS_BULLETIN_A([1/19/25], [Lot and his oldest daughter. It is written in Genesis[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])19:37.])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Lot and his oldest daughter. It is written in Genesis[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])19:37.])])m4_dnl
+m4_divert
+_CORRECT_ANS_BULLETIN_B([1/19/25], [Lot and his oldest daughter. It is written in Genesis[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])19:37.])
+m4_divert([1])
 
 m4_define([_QUESTION_0134M_A], [Abraham and Hagar. Genesis\ 16])m4_dnl
 m4_define([_QUESTION_0134M_B], [Lot and his oldest daughter. Genesis\ 19])m4_dnl
@@ -575,9 +609,6 @@ _CORRECT_ANS_LOG([1/12/25], [Shelomith--that was the name of the mother of the m
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
 _CORRECT_ANS_BULLETIN_A([1/12/25], [Shelomith---that was the name of the mother of the man who blasphemed God. The man was stoned. It is written in Leviticus[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])24:11[,] 14--16.])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Shelomith---that was the name of the mother of the man who blasphemed God. The man was stoned. It is written in Leviticus[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])24:11[,] 14--16.])])m4_dnl
-m4_divert
-_CORRECT_ANS_BULLETIN_B([1/12/25], [Shelomith---that was the name of the mother of the man who blasphemed God. The man was stoned. It is written in Leviticus[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])24:11[,] 14--16.])
-m4_divert([1])
 
 m4_define([_QUESTION_0131M_A], [Shelomith. Leviticus\ 24])m4_dnl
 m4_define([_QUESTION_0131M_B], [Hoglah. Numbers\ 36])m4_dnl
