@@ -32,16 +32,47 @@ m4_divert(`1')
 
 _QUESTION
 m4_changequote(`[', `]')
+m4_define([_QUESTION_0139], [We are quite familiar with the Magnificat, which Mary spoke to Elizabeth: **"My soul magnifies the Lord, and my spirit rejoices in God my Savior, for he has looked on the humble estate of his servant. For behold, from now on all generations will call me blessed."** (Luke\ 1:46b--48a) But someone other than Mary once said this: **"My heart exults in the LORD; my horn is exalted in the LORD. My mouth derides my enemies, because I rejoice in your salvation."**. Who spoke it? And who was present when she spoke it?  _CHAPTER_AND_VERSE where this is found in the Bible.])m4_dnl Difficulty 3
+m4_dnl Single quotes should be doubled because the multiple choice
+m4_dnl question will appear in an SQLite `INSERT` statement.
+m4_define([_QUESTION_0139M], [We are quite familiar with the Magnificat, which Mary spoke to Elizabeth: **"My soul magnifies the Lord, and my spirit rejoices in God my Savior, for he has looked on the humble estate of his servant. For behold, from now on all generations will call me blessed."** (Luke\ 1:46b--48a) But someone other than Mary once said this: **"My heart exults in the LORD; my horn is exalted in the LORD. My mouth derides my enemies, because I rejoice in your salvation."**. Who spoke it? And who was present when she spoke it?  _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 3
+_QUESTION_0139
+_SEND_IN_YOUR_ANSWERS
+m4_divert
+_QUESTION_0139
+_SEND_IN_YOUR_ANSWERS
+m4_divert([1])
+m4_define([_QUESTION_SQLITE],[_QUESTION_0139])
+
+_WHEN_ASKED
+2/9/25
+
+_ANSWER_2
+m4_undefine([_NBSP_MARKDOWN])m4_dnl
+_CORRECT_ANS_LOG([2/9/25], [Hannah. She spoke it in the hearing of the priest Eli at Shiloh. It is written in 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Samuel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:1.])
+
+m4_define([_NBSP_MARKDOWN], [])m4_dnl
+_CORRECT_ANS_BULLETIN_A([2/9/25], [Hannah. She spoke it in the hearing of the priest Eli at Shiloh. It is written in 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Samuel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:1.])
+m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Hannah. She spoke it in the hearing of the priest Eli at Shiloh. It is written in 1[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])Samuel[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])2:1.])])m4_dnl
+
+m4_define([_QUESTION_0139M_A], [Deborah. She spoke it together with Barak. Judges\ 5])m4_dnl
+m4_define([_QUESTION_0139M_B], [Hannah. She spoke it in the presence of Eli. 1\ Samuel\ 2])m4_dnl
+m4_define([_QUESTION_0139M_C], [The prophetess Anna. She spoke it in the presence of Simeon. Luke\ 2])m4_dnl
+m4_divert([2])m4_dnl
+INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0139M', '_QUESTION_0139M_A', '_QUESTION_0139M_B', '_QUESTION_0139M_C', 'B', NULL);
+m4_divert([3])m4_dnl
+INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
+m4_divert([1])m4_dnl
+m4_changequote
+
+_QUESTION
+m4_changequote(`[', `]')
 m4_define([_QUESTION_0138], [When Boaz wanted to marry Ruth, he had to buy the property that belonged to Elimelech. But there was a kinsman redeemer who had first rights to redeem Elimelech's property. How was the transaction conducted so that the first rights were transferred from the kinsman redeemer to Boaz?  _CHAPTER_AND_VERSE where this is found in the Bible.])m4_dnl Difficulty 2
 m4_dnl Single quotes should be doubled because the multiple choice
 m4_dnl question will appear in an SQLite `INSERT` statement.
 m4_define([_QUESTION_0138M], [When Boaz wanted to marry Ruth, he had to buy the property that belonged to Elimelech. But there was a kinsman redeemer who had first rights to redeem Elimelech''s property. How was the transaction conducted so that the first rights were transferred from the kinsman redeemer to Boaz?  _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 2
 _QUESTION_0138
 _SEND_IN_YOUR_ANSWERS
-m4_divert
-_QUESTION_0138
-_SEND_IN_YOUR_ANSWERS
-m4_divert([1])
 m4_define([_QUESTION_SQLITE],[_QUESTION_0138])
 
 _WHEN_ASKED
@@ -54,6 +85,9 @@ _CORRECT_ANS_LOG([2/2/25], [that the kinsman redeemer took off his sandal and ga
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
 _CORRECT_ANS_BULLETIN_A([2/2/25], [that the kinsman redeemer took off his sandal and gave it to Boaz. It is written in Ruth[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:7.])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([that the kinsman redeemer took off his sandal and gave it to Boaz. It is written in Ruth[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:7.])])m4_dnl
+m4_divert
+_CORRECT_ANS_BULLETIN_B([2/2/25], [that the kinsman redeemer took off his sandal and gave it to Boaz. It is written in Ruth[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])4:7.])
+m4_divert([1])
 
 m4_define([_QUESTION_0138M_A], [Ruth\ 2])m4_dnl
 m4_define([_QUESTION_0138M_B], [Ruth\ 3])m4_dnl
@@ -85,9 +119,6 @@ _CORRECT_ANS_LOG([1/25/25], [our Lord says "Let your light shine before others s
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
 _CORRECT_ANS_BULLETIN_A([1/25/25], [our Lord says **"Let your light shine before others so that they may see your good works and give glory to your Father who is in heaven"** in Matthew[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:16.])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([our Lord says[,] **"Let your light shine before others so that they may see your good works and give glory to your Father who is in heaven"** in Matthew[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:16.])])m4_dnl
-m4_divert
-_CORRECT_ANS_BULLETIN_B([1/25/25], [our Lord says **"Let your light shine before others so that they may see your good works and give glory to your Father who is in heaven"** in Matthew[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])5:16.])
-m4_divert([1])
 
 m4_define([_QUESTION_0137M_A], [Hebrews\ 3])m4_dnl
 m4_define([_QUESTION_0137M_B], [Mark\ 10])m4_dnl
