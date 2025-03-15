@@ -32,16 +32,47 @@ m4_divert(`1')
 
 _QUESTION
 m4_changequote(`[', `]')
-m4_define([_QUESTION_0142], [Where in the Bible does Jesus say, **"I tell you, among those born of women none is greater than John. Yet the one who is least in the kingdom of God is greater than he."**? _CHAPTER_AND_VERSE where this is found.])m4_dnl Difficulty 3
+m4_define([_QUESTION_0143], [What are the names of Abraham's brothers? _CHAPTER_AND_VERSE where this is found in the Bible.])m4_dnl Difficulty 3
 m4_dnl Single quotes should be doubled because the multiple choice
 m4_dnl question will appear in an SQLite `INSERT` statement.
-m4_define([_QUESTION_0142M], [Where in the Bible does Jesus say, **"I tell you, among those born of women none is greater than John. Yet the one who is least in the kingdom of God is greater than he."**? _CHAPTER where this is found.])m4_dnl Difficulty 3
-_QUESTION_0142
+m4_define([_QUESTION_0143M], [What are the names of Abraham''s brothers? _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 3
+_QUESTION_0143
 _SEND_IN_YOUR_ANSWERS
 m4_divert
-_QUESTION_0142
+_QUESTION_0143
 _SEND_IN_YOUR_ANSWERS
 m4_divert([1])
+m4_define([_QUESTION_SQLITE],[_QUESTION_0143])
+
+_WHEN_ASKED
+3/16/25
+
+_ANSWER_2
+m4_undefine([_NBSP_MARKDOWN])m4_dnl
+_CORRECT_ANS_LOG([3/16/25], [Nahor and Haran. It is written in Genesis[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:27.])
+
+m4_define([_NBSP_MARKDOWN], [])m4_dnl
+_CORRECT_ANS_BULLETIN_A([3/16/25], [Nahor and Haran. It is written in Genesis[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:27.])
+m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Nahor and Haran. It is written in Genesis[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:27.])])m4_dnl
+
+m4_define([_QUESTION_0143M_A], [Genesis\ 23])m4_dnl
+m4_define([_QUESTION_0143M_B], [Genesis\ 11])m4_dnl
+m4_define([_QUESTION_0143M_C], [Genesis\ 9])m4_dnl
+m4_divert([2])m4_dnl
+INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0143M', '_QUESTION_0143M_A', '_QUESTION_0143M_B', '_QUESTION_0143M_C', 'B', NULL);
+m4_divert([3])m4_dnl
+INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
+m4_divert([1])m4_dnl
+m4_changequote
+
+_QUESTION
+m4_changequote(`[', `]')
+m4_define([_QUESTION_0142], [Where in the Bible does Jesus say, **"I tell you, among those born of women none is greater than John. Yet the one who is least in the kingdom of God is greater than he."**? _CHAPTER_AND_VERSE where this is found in the Bible.])m4_dnl Difficulty 3
+m4_dnl Single quotes should be doubled because the multiple choice
+m4_dnl question will appear in an SQLite `INSERT` statement.
+m4_define([_QUESTION_0142M], [Where in the Bible does Jesus say, **"I tell you, among those born of women none is greater than John. Yet the one who is least in the kingdom of God is greater than he."**? _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 3
+_QUESTION_0142
+_SEND_IN_YOUR_ANSWERS
 m4_define([_QUESTION_SQLITE],[_QUESTION_0142])
 
 _WHEN_ASKED
@@ -52,8 +83,11 @@ m4_undefine([_NBSP_MARKDOWN])m4_dnl
 _CORRECT_ANS_LOG([3/2/25], [that our Lord says[,] "I tell you[,] among those born of women none is greater than John. Yet the one who is least in the kingdom of God is greater than he." in Matthew[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:11 and Luke[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])7:28.])
 
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
-_CORRECT_ANS_LOG([3/2/25], [that our Lord says[,] **"I tell you[,] among those born of women none is greater than John. Yet the one who is least in the kingdom of God is greater than he."** in Matthew[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:11 and Luke[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])7:28.])
+_CORRECT_ANS_BULLETIN_A([3/2/25], [that our Lord says[,] **"I tell you[,] among those born of women none is greater than John. Yet the one who is least in the kingdom of God is greater than he."** in Matthew[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:11 and Luke[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])7:28.])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([that our Lord says[,] **"I tell you[,] among those born of women none is greater than John. Yet the one who is least in the kingdom of God is greater than he."** in Matthew[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:11 and Luke[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])7:28.])])m4_dnl
+m4_divert
+_CORRECT_ANS_BULLETIN_B([3/2/25], [that our Lord says[,] **"I tell you[,] among those born of women none is greater than John. Yet the one who is least in the kingdom of God is greater than he."** in Matthew[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:11 and Luke[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])7:28.])
+m4_divert([1])
 
 m4_define([_QUESTION_0142M_A], [Mark\ 11])m4_dnl
 m4_define([_QUESTION_0142M_B], [Luke\ 7])m4_dnl
@@ -85,12 +119,9 @@ _CORRECT_ANS_LOG([2/23/25], [that our Lord says[,] "The harvest is plentiful[,] 
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
 _CORRECT_ANS_BULLETIN_A([2/23/25], [that our Lord says[,] **"The harvest is plentiful[,] but the laborers are few"** in Matthew[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])9:37--38 and in Luke[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])10:2.])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([that our Lord says[,] **"The harvest is plentiful[,] but the laborers are few"** in Matthew[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])9:37--38 and in Luke[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])10:2.])])m4_dnl
-m4_divert
-_CORRECT_ANS_BULLETIN_B([2/23/25], [that our Lord says[,] **"The harvest is plentiful[,] but the laborers are few"** in Matthew[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])9:37--38 and in Luke[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])10:2.])
-m4_divert([1])
 
-m4_define([_QUESTION_0141M_A], [Luke\ 12])m4_dnl
-m4_define([_QUESTION_0141M_B], [John\ 18])m4_dnl
+m4_define([_QUESTION_0141M_A], [Matthew\ 14])m4_dnl
+m4_define([_QUESTION_0141M_B], [Mark\ 12])m4_dnl
 m4_define([_QUESTION_0141M_C], [Luke\ 10])m4_dnl
 m4_divert([2])m4_dnl
 INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0141M', '_QUESTION_0141M_A', '_QUESTION_0141M_B', '_QUESTION_0141M_C', 'C', NULL);
