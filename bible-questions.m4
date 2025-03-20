@@ -32,16 +32,47 @@ m4_divert(`1')
 
 _QUESTION
 m4_changequote(`[', `]')
+m4_define([_QUESTION_0144], [In Luke, chapter\ 4, our Lord quotes the prophet Isaiah when He says, **"The Spirit of the Lord is upon me, because he has anointed me to proclaim good news to the poor."** _CHAPTER_AND_VERSE where this is found in the book of Isaiah.])m4_dnl Difficulty 3
+m4_dnl Single quotes should be doubled because the multiple choice
+m4_dnl question will appear in an SQLite `INSERT` statement.
+m4_define([_QUESTION_0144M], [In Luke, chapter\ 4, our Lord quotes the prophet Isaiah when He says, **"The Spirit of the Lord is upon me, because he has anointed me to proclaim good news to the poor."** _CHAPTER where this is found in the book of Isaiah.])m4_dnl Difficulty 3
+_QUESTION_0144
+_SEND_IN_YOUR_ANSWERS
+m4_divert
+_QUESTION_0144
+_SEND_IN_YOUR_ANSWERS
+m4_divert([1])
+m4_define([_QUESTION_SQLITE],[_QUESTION_0144])
+
+_WHEN_ASKED
+3/23/25
+
+_ANSWER_2
+m4_undefine([_NBSP_MARKDOWN])m4_dnl
+_CORRECT_ANS_LOG([3/23/25], [that it is written in Isaiah[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])61:1.])
+
+m4_define([_NBSP_MARKDOWN], [])m4_dnl
+_CORRECT_ANS_BULLETIN_A([3/23/25], [that it is written in Isaiah[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])61:1.])
+m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([that it is written in Isaiah[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])61:1.])])m4_dnl
+
+m4_define([_QUESTION_0144M_A], [Isaiah\ 43])m4_dnl
+m4_define([_QUESTION_0144M_B], [Isaiah\ 56])m4_dnl
+m4_define([_QUESTION_0144M_C], [Isaiah\ 61])m4_dnl
+m4_divert([2])m4_dnl
+INSERT INTO mult_choice_bible_questions (mult_choice_bible_question, mult_choice_ans_a, mult_choice_ans_b, mult_choice_ans_c, mult_choice_correct_ans, mult_choice_bible_question_remarks) VALUES ('_QUESTION_0144M', '_QUESTION_0144M_A', '_QUESTION_0144M_B', '_QUESTION_0144M_C', 'C', NULL);
+m4_divert([3])m4_dnl
+INSERT INTO regular_bible_questions (reg_bible_question, reg_ans, reg_bible_question_remarks) VALUES ('_QUESTION_SQLITE', '_SHORT_ANS_SQLITE', NULL);
+m4_divert([1])m4_dnl
+m4_changequote
+
+_QUESTION
+m4_changequote(`[', `]')
 m4_define([_QUESTION_0143], [What are the names of Abraham's brothers? _CHAPTER_AND_VERSE where this is found in the Bible.])m4_dnl Difficulty 3
 m4_dnl Single quotes should be doubled because the multiple choice
 m4_dnl question will appear in an SQLite `INSERT` statement.
 m4_define([_QUESTION_0143M], [What are the names of Abraham''s brothers? _CHAPTER where this is found in the Bible.])m4_dnl Difficulty 3
 _QUESTION_0143
 _SEND_IN_YOUR_ANSWERS
-m4_divert
-_QUESTION_0143
-_SEND_IN_YOUR_ANSWERS
-m4_divert([1])
 m4_define([_QUESTION_SQLITE],[_QUESTION_0143])
 
 _WHEN_ASKED
@@ -54,6 +85,9 @@ _CORRECT_ANS_LOG([3/16/25], [Nahor and Haran. It is written in Genesis[]m4_ifdef
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
 _CORRECT_ANS_BULLETIN_A([3/16/25], [Nahor and Haran. It is written in Genesis[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:27.])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([Nahor and Haran. It is written in Genesis[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:27.])])m4_dnl
+m4_divert
+_CORRECT_ANS_BULLETIN_B([3/23/25], [Nahor and Haran. It is written in Genesis[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:27.])
+m4_divert([1])
 
 m4_define([_QUESTION_0143M_A], [Genesis\ 23])m4_dnl
 m4_define([_QUESTION_0143M_B], [Genesis\ 11])m4_dnl
@@ -85,9 +119,6 @@ _CORRECT_ANS_LOG([3/2/25], [that our Lord says[,] "I tell you[,] among those bor
 m4_define([_NBSP_MARKDOWN], [])m4_dnl
 _CORRECT_ANS_BULLETIN_A([3/2/25], [that our Lord says[,] **"I tell you[,] among those born of women none is greater than John. Yet the one who is least in the kingdom of God is greater than he."** in Matthew[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:11 and Luke[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])7:28.])
 m4_define([_SHORT_ANS_SQLITE], [_CORRECT_ANS_SHORT([that our Lord says[,] **"I tell you[,] among those born of women none is greater than John. Yet the one who is least in the kingdom of God is greater than he."** in Matthew[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:11 and Luke[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])7:28.])])m4_dnl
-m4_divert
-_CORRECT_ANS_BULLETIN_B([3/2/25], [that our Lord says[,] **"I tell you[,] among those born of women none is greater than John. Yet the one who is least in the kingdom of God is greater than he."** in Matthew[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])11:11 and Luke[]m4_ifdef([_NBSP_MARKDOWN], [\ ], [ ])7:28.])
-m4_divert([1])
 
 m4_define([_QUESTION_0142M_A], [Mark\ 11])m4_dnl
 m4_define([_QUESTION_0142M_B], [Luke\ 7])m4_dnl
